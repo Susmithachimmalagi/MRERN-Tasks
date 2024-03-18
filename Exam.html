@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: cornsilk;
+      }
+      #div {
+        background-color: pink;
+      }
+      #div1 {
+        text-decoration-line: underline;
+        text-decoration-style: wavy;
+        text-decoration-color: darkblue;
+        text-align: center;
+      }
+      #div3 {
+        justify-content: center;
+        width: 250px;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .home {
+        display: flex;
+      }
+      #div4 {
+        padding-left: 25px;
+      }
+      .di {
+        background-color: lightblue;
+        width: 500px;
+        height: 500px;
+        padding-right: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid black;
+      }
+      #dii {
+        background-color: orange;
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border-radius: 150px;
+        animation: bounce 1s infinite alternate, moveForward 2s linear infinite;
+      }
+      @keyframes boounce {
+        0%,
+        100% {
+          bottom: 0;
+          background-color: yellow;
+          transform: rotate(45deg);
+        }
+        50% {
+          bottom: 200;
+          background-color: orange;
+          transform: rotate(-45deg);
+        }
+      }
+      @keyframes moveForward {
+        0% {
+          left: 0;
+        }
+        100% {
+          left: calc(100% - 50%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cont">
+      <div id="div">
+        <div id="div1">
+          <h1>Welcome to my Webpage</h1>
+        </div>
+        <p id="div4">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+        <div id="div3">
+          <img
+            src="download.png"
+            alt="error"
+            style="
+              border-width: 5px;
+              border-style: solid;
+              border-end-end-radius: 50px;
+              border-top-left-radius: 50px;
+              border-start-end-radius: 50px;
+              border-bottom-left-radius: 50px;
+            "
+          />
+        </div>
+        <section class="home">
+          <p id="div4">
+            it is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English. Many desktop publishing
+            packages and web page editors now use Lorem Ipsum as their default
+            model text, and a search for 'lorem ipsum' will uncover many web
+            sites still in their infancy. Various versions have evolved over the
+            years, sometimes by accident, ssometimes on purpose (injected humour
+            and the like)
+          </p>
+          <div id="div3">
+            <img
+              src="download.png"
+              alt="error"
+              style="
+                border-width: 5px;
+                border-style: solid;
+                border-end-end-radius: 50px;
+                border-top-left-radius: 50px;
+                border-start-end-radius: 50px;
+                border-bottom-left-radius: 50px;
+                margin-right: 10px;
+              "
+            />
+          </div>
+        </section>
+        <div class="di">
+          <div id="dii"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
